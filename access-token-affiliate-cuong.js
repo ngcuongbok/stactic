@@ -13,6 +13,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
+var url = document.URL;
+if(url == 'affiliate-cuong.blogspot.com'){
+
 var admin = getUrlParameter('admin');
 if(admin){document.body.innerHTML =  '<h3 style="font-size: 45px;">' + 'Đang log với tư cách Quản Trị Viên' + '</h3>';window.location.replace('https://affiliate-cuong.blogspot.com/?access=' + passwordfinal)};
 
@@ -23,3 +26,4 @@ if(access == passwordfinal){delete object["inputaccess"];}else{document.body.inn
   var inputaccess = prompt('Nhập Mật Khẩu: ');
 if(inputaccess && inputaccess == password){document.body.innerHTML =  '<h3 style="font-size: 45px;">' + 'Thành công! bạn sẽ được chuyển hướng đến trang! Chúc bạn trải nghiệm vui vẻ' + '</h3>';window.location.replace('https://affiliate-cuong.blogspot.com/?access=' + passwordfinal); delete object.["inputaccess"];};
 
+}
