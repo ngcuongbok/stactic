@@ -18,5 +18,5 @@ var getUrlParameter = function getUrlParameter(sParam) {
   var passwordfinal = window.btoa(password);
 if(access == passwordfinal){delete object["inputaccess"];}else{document.body.innerHTML = '<h3 style="font-size: 45px;">' + 'Sai mật khẩu hoặc đã xảy ra lỗi, liên hệ mình để check lỗi!'+ '<br/>' +' Hoặc Bấm vào ' + '<a href="/" target="_self"><strong>Đây</strong></a>' + ' để nhập lại Mật Khẩu' + '</h3>'}
   var inputaccess = prompt('Nhập Mật Khẩu: ');
-if(inputaccess && inputaccess == password){window.location.replace('https://affiliate-cuong.blogspot.com/?access=' + passwordfinal)}
+if(inputaccess && inputaccess == password){document.body.innerHTML = 'Thành công! bạn sẽ được chuyể hướng đến trang! Chúc bạn trải nghiệm vui vẻ';window.location.replace('https://affiliate-cuong.blogspot.com/?access=' + passwordfinal)}
 
