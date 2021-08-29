@@ -18,8 +18,8 @@ var admin = getUrlParameter('admin');
   var access = getUrlParameter('access');
   var password = 'hoptac';
   var passwordfinal = window.btoa(password);
-
-if(url == 'affiliate-cuong.blogspot.com'){document.body.onload = 'checkpass()'}
+var url1 = 'affiliate-cuong.blogspot.com'
+if(url = url1){document.body.onload = 'checkpass()'}
 
 function checkpass(){
 if(admin){document.body.innerHTML =  '<h3 style="font-size: 45px;">' + 'Đang log với tư cách Quản Trị Viên' + '</h3>';window.location.replace('https://affiliate-cuong.blogspot.com/?access=' + passwordfinal)};
