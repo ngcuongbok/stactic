@@ -14,4 +14,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
   var access = getUrlParameter('access');
-alert(access)
+  var password = 'hoptacphattrien';
+  var passwordfinal = window.btoa(password);
+  alert(passwordfinal)
